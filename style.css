@@ -1,0 +1,58 @@
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    padding: 20vh 0;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brown-square {
+    position: relative;
+    fill: brown;
+    stroke-width: 5;
+}
+
+.use-brown {
+    transform-origin: 50px 50px;
+    animation: spins 0.5s linear infinite forwards;
+    stroke: chocolate;
+}
+
+@keyframes spins {
+    0% {rotate: 0deg;}
+
+    25% {rotate: 15deg}
+
+    75% {rotate: -15deg;}
+
+    100% {rotate: 0deg;}
+}
+
+.blue-rectangle {
+    position: relative;
+    fill: blue;
+    stroke-width: 5;
+    stroke: forestgreen;
+    animation: shuttle 0.53s linear 1s infinite;
+}
+
+@keyframes shuttle {
+    from {left: 0;}
+
+    25% {left: 30px;}
+
+    75% { left: -30px;}
+
+    to {left: 0;}
+}
+
+.red-ellipse {
+    fill: red;
+    stroke-width: 5;
+    stroke: lightslategrey;
+}
